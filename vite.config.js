@@ -10,6 +10,10 @@ export default defineConfig({
       {
         src: './404.html',
         dest: ''
+      },
+      {
+        src: 'CNAME',
+        dest: ''
       }
     ]
   })
