@@ -41,7 +41,7 @@ const links = [
   {
     id: "adventures",
     title: "Adventures",
-    link: "https://www.papermark.io/view/cm5j52czw000357vc0pgov3ef",
+    link: "https://www.papermark.io/view/cm5lmyllu0003kj89g4t27v91",
     info: "memories with my partner"
   }
 ];
