@@ -9,10 +9,15 @@
 
 <body>
     <script>
-        if (window.location.pathname === '/running') {
-            window.location.replace('https://www.papermark.io/view/cm5j4zh0r0003d43ncv8e7u66')
+        const redirects = {
+            "/run": "https://www.papermark.io/view/cm5j4zh0r0003d43ncv8e7u66",
+            "/trips": "https://www.papermark.io/view/cm5j52czw000357vc0pgov3ef"
+        }
+
+        if (window.location.pathname in redirects) {
+            window.location.replace(redirects[window.location.pathname])
         } else {
-            window.location.replace('/')
+            window.location.replace("/")
         }
     </script>
 </body>
