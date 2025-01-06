@@ -40,7 +40,7 @@ const links = [
   },
   {
     id: "adventures",
-    title: "TA Adventures",
+    title: "Adventures",
     link: "https://www.papermark.io/view/cm5j52czw000357vc0pgov3ef",
     info: "memories with my partner"
   }
@@ -106,12 +106,12 @@ function App() {
       </div>
       <div className="flex justify-between mt-8">
         <div className="flex">
-          <img className="rounded-b-3xl opacity-80 mr-5 border-ra" src={cw2} alt="cw2" width={'120px'} height={'auto'} />
+          <img className="rounded-b-3xl opacity-80 mr-5" src={cw1} alt="cw1" width={'100px'} height={'auto'} />
           {/* <img className="rounded-b-3xl opacity-70" src={cw3} alt="cw3" width={'120px'} height={'auto'} /> */}
         </div>
         <div>
           {/* <img className="rounded-b-3xl opacity-70" src={cw3} alt="cw3" width={'110px'} height={'auto'} /> */}
-          <img className="rounded-b-3xl opacity-80" src={cw1} alt="cw1" width={'100px'} height={'auto'} />
+          <img className="rounded-b-3xl opacity-80" src={cw2} alt="cw2" width={'120px'} height={'auto'} />
         </div>
       </div>
     </div>
