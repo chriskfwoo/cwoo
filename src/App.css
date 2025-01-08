@@ -5,9 +5,8 @@
   text-align: center;
 }
 
-body {
-  width: calc( 100% );
-  max-width: calc( 100vw - 1em );
+html {
+  scrollbar-gutter: stable;
 }
 
 a {
