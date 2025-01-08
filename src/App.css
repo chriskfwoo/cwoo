@@ -4,3 +4,12 @@
   padding: 2rem;
   text-align: center;
 }
+
+body {
+  width: calc( 100% );
+  max-width: calc( 100vw - 1em );
+}
+
+a {
+  color: rgb(21 94 117 / var(--tw-text-opacity, 1));
+} 

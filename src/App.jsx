@@ -1,3 +1,5 @@
+import React from 'react';
+
 import "./App.css"
 import avatar from './cw_avatar.png';
 import cw1 from './cw_1.jpeg';
@@ -32,17 +34,39 @@ const jobs = [
 ];
 
 const links = [
+  // {
+  //   id: "woo",
+  //   title: "Woo History",
+  //   link: "",
+  //   info: "my family history in QC in early 1900s (in-progress)",
+  //   disabled: true
+  // },
+  // {
+  //   id: "chloevywoo",
+  //   title: "Chloe Vy Woo",
+  //   link: "",
+  //   info: "to my daughter (in-progress)",
+  //   disabled: true
+  // },
+  // {
+  //   id: "recipes",
+  //   title: "Recipes",
+  //   link: "",
+  //   info: "my favourite reciples including my mom's (in-progress)",
+  // },
   {
     id: "running-reports",
     title: "Running Reports",
     link: "https://www.papermark.io/view/cm5j4zh0r0003d43ncv8e7u66",
-    info: "documenting my pain"
+    info: "documenting my pain",
+    private: true
   },
   {
     id: "adventures",
     title: "Adventures",
     link: "https://www.papermark.io/view/cm5lmyllu0003kj89g4t27v91",
-    info: "memories with my partner"
+    info: "memories with my partner",
+    private: true
   }
 ];
 
@@ -68,6 +92,7 @@ const projects = [
 ];
 
 function App() {
+  const [isOpen, setIsOpen] = React.useState(false);
 
   return (
     <div>
@@ -137,25 +162,35 @@ function App() {
             }
           </div>
         </div>
-        <div className="mt-5">
-          <h3 className="font-bold">Other cool projects</h3>
-          <div className="text-sm">
-            {
-              projects.map(project => {
-                return (<div className="pb-3">
-                  <a href={project.link} className="underline" target="_blank">{project.title}</a>: {project.info}
-                </div>)
-              })
-            }
-          </div>
+        <div className="mt-2">
+          {
+            !isOpen && <button className="py-1 px-2 border-2 border-slate-300 rounded text-xs" onClick={() => setIsOpen(true)}>Show projects</button>
+          }
+          {
+            isOpen && <div className="text-sm rounded-lg border-2 border-slate-500 p-4 m-2">
+              <h3 className="font-bold mb-2">Projects</h3>
+              {
+                projects.map(project => {
+                  return (<div className="pb-3">
+                    <a href={project.link} className="underline" target="_blank">{project.title}</a>: {project.info}
+                  </div>)
+                })
+              }
+              <div className="flex justify-end">
+                <button className="py-1 px-2 border-2 border-slate-500 rounded text-xs bg-slate-200" onClick={() => setIsOpen(false)}>Close</button>
+              </div>
+            </div>
+          }
         </div>
         <div className="mt-5">
-          <h3 className="font-bold">Posts</h3>
+          <h3 className="font-bold">Notebooks</h3>
           <div className="text-sm">
             {
               links.map(link => {
                 return (<div className="pb-3">
-                  <a href={link.link} className="underline" target="_blank">{link.title}</a>: {link.info}
+                  {link.private && "🔒"}
+                  <a href={link.link} className="underline" target="_blank">
+                    {link.title}</a>: {link.info}
                 </div>)
               })
             }
