@@ -113,7 +113,7 @@ function App() {
         <div className="mt-5 text-neutral-800 leading-6">
           <p>
             I'm a software developer at <a href="https://drw.com/" className="underline" target="_blank">DRW</a> trading firm based in Montréal, Canada.
-            I graduated from <a href="https://www.concordia.ca/" className="underline" target="_blank">Concordia</a> in Bachelor of Engineering in Software Engineering and completed my quest to get the iron ring.
+            I graduated from <a href="https://www.concordia.ca/" className="underline" target="_blank">Concordia</a> with a Bachelor of Engineering in Software Engineering and completed my quest to get the iron ring.
             I also played a key role in organizing ConUHacks IV and V, Montreal's largest hackathon.
           </p>
         </div>
