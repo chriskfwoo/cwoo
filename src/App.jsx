@@ -59,14 +59,14 @@ const links = [
     id: "chloevywoo",
     title: "Chloe Vy Woo",
     link: "",
-    info: "to my daughter (in-progress)",
+    info: "memories with my daugher (in-progress)",
     private: true
   },
   {
     id: "recipes",
     title: "Recipes",
     link: "",
-    info: "my favourite reciples including my mom's (in-progress)",
+    info: "my favourite recipes including my mom's (in-progress)",
     private: true
   },
 ];
