@@ -55,17 +55,17 @@ const links = [
   //   info: "my favourite reciples including my mom's (in-progress)",
   // },
   {
-    id: "running-reports",
-    title: "Running Reports",
-    link: "https://www.papermark.io/view/cm5j4zh0r0003d43ncv8e7u66",
-    info: "documenting my pain",
-    private: true
-  },
-  {
     id: "adventures",
     title: "Adventures",
     link: "https://www.papermark.io/view/cm5lmyllu0003kj89g4t27v91",
     info: "memories with my partner",
+    private: true
+  },
+  {
+    id: "running-reports",
+    title: "Running Reports",
+    link: "https://www.papermark.io/view/cm5j4zh0r0003d43ncv8e7u66",
+    info: "documenting my pain",
     private: true
   }
 ];
