@@ -190,8 +190,8 @@ function App() {
               links.map(link => {
                 return (<div className="pb-3">
                   {link.private && "🔒"}
-                  <a href={link.link} className="underline" target="_blank">
-                    {link.title}</a>: {link.info}
+                  {link.link !== "" ? <a href={link.link} className="underline" target="_blank">
+                  {link.title}</a> : link.title}: {link.info}
                 </div>)
               })
             }
