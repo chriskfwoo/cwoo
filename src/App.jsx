@@ -34,13 +34,13 @@ const jobs = [
 ];
 
 const links = [
-  // {
-  //   id: "woo",
-  //   title: "Woo History",
-  //   link: "",
-  //   info: "my family history in QC in early 1900s (in-progress)",
-  //   disabled: true
-  // },
+  {
+    id: "woo",
+    title: "Woo History",
+    link: "https://www.papermark.io/view/cm5ysldz6000f8hbqs5x9xp2p",
+    info: "my family history in Quebec",
+    private: true
+  },
   // {
   //   id: "chloevywoo",
   //   title: "Chloe Vy Woo",
