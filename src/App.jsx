@@ -38,22 +38,9 @@ const links = [
     id: "woo",
     title: "Woo History",
     link: "https://www.papermark.io/view/cm5ysldz6000f8hbqs5x9xp2p",
-    info: "my family history in Quebec",
+    info: "my family history in Quebec (in-progress)",
     private: true
   },
-  // {
-  //   id: "chloevywoo",
-  //   title: "Chloe Vy Woo",
-  //   link: "",
-  //   info: "to my daughter (in-progress)",
-  //   disabled: true
-  // },
-  // {
-  //   id: "recipes",
-  //   title: "Recipes",
-  //   link: "",
-  //   info: "my favourite reciples including my mom's (in-progress)",
-  // },
   {
     id: "adventures",
     title: "Adventures",
@@ -67,7 +54,21 @@ const links = [
     link: "https://www.papermark.io/view/cm5j4zh0r0003d43ncv8e7u66",
     info: "documenting my pain",
     private: true
-  }
+  },
+    {
+    id: "chloevywoo",
+    title: "Chloe Vy Woo",
+    link: "",
+    info: "to my daughter (in-progress)",
+    private: true
+  },
+  {
+    id: "recipes",
+    title: "Recipes",
+    link: "",
+    info: "my favourite reciples including my mom's (in-progress)",
+    private: true
+  },
 ];
 
 const projects = [
