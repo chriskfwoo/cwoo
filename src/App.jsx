@@ -36,7 +36,7 @@ const jobs = [
 const links = [
   {
     id: "recipes",
-    title: "Recipes",
+    title: "👨‍🍳 Recipes",
     link: "https://chriswoo.notion.site/Cookbook-1dfc798f207b80f38e15c3795f64305c?pvs=4",
     info: "my favourite recipes including my mom's (in-progress)",
     private: false
