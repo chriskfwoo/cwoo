@@ -35,10 +35,17 @@ const jobs = [
 
 const links = [
   {
-    id: "woo",
-    title: "Woo History",
-    link: "https://www.papermark.io/view/cm5ysldz6000f8hbqs5x9xp2p",
-    info: "my family history in Quebec (in-progress)",
+    id: "recipes",
+    title: "Recipes",
+    link: "https://www.notion.so/chriswoo/Cookbook-1dfc798f207b80f38e15c3795f64305c?pvs=4",
+    info: "my favourite recipes including my mom's (in-progress)",
+    private: false
+  },
+  {
+    id: "chloevywoo",
+    title: "Chloe Vy Woo",
+    link: "https://jstrieb.github.io/link-lock/#eyJ2IjoiMC4wLjEiLCJlIjoiRVpvbnFVU0xCdzN0ZFA1aDduSU9KR2d6ZGl6MXRaakszUDBvb29SaDNsNWNXRDlmNktYSGt5UWRXSERmdEVnUVpLd3JnUHpzQXRwWHNzZz0iLCJzIjoiS2RZdTVoQmNrQm1tWlJzd29PbVFQZz09IiwiaSI6ImJhcGt1SjdHZ2hhYjlBZ1AifQ==",
+    info: "memories with my daugher (in-progress)",
     private: true
   },
   {
@@ -55,20 +62,13 @@ const links = [
     info: "documenting my pain",
     private: true
   },
-    {
-    id: "chloevywoo",
-    title: "Chloe Vy Woo",
-    link: "",
-    info: "memories with my daugher (in-progress)",
-    private: true
-  },
   {
-    id: "recipes",
-    title: "Recipes",
-    link: "",
-    info: "my favourite recipes including my mom's (in-progress)",
+    id: "woo",
+    title: "Woo History",
+    link: "https://www.papermark.io/view/cm5ysldz6000f8hbqs5x9xp2p",
+    info: "my family history in Quebec (in-progress)",
     private: true
-  },
+  }
 ];
 
 const projects = [
