@@ -43,28 +43,21 @@ const links = [
   },
   {
     id: "chloevywoo",
-    title: "Chloe Vy Woo",
-    link: "https://jstrieb.github.io/link-lock/#eyJ2IjoiMC4wLjEiLCJlIjoiRVpvbnFVU0xCdzN0ZFA1aDduSU9KR2d6ZGl6MXRaakszUDBvb29SaDNsNWNXRDlmNktYSGt5UWRXSERmdEVnUVpLd3JnUHpzQXRwWHNzZz0iLCJzIjoiS2RZdTVoQmNrQm1tWlJzd29PbVFQZz09IiwiaSI6ImJhcGt1SjdHZ2hhYjlBZ1AifQ==",
-    info: "memories with my daugher (in-progress)",
-    private: true
-  },
-  {
-    id: "adventures",
-    title: "Adventures",
-    link: "https://www.papermark.io/view/cm5lmyllu0003kj89g4t27v91",
-    info: "memories with my partner",
+    title: "👶 Chloe Vy Woo",
+    link: "https://nimble.li/a98k5jl9",
+    info: "memories with my daugher (curated)",
     private: true
   },
   {
     id: "running-reports",
-    title: "Running Reports",
+    title: "🏃‍♂️ Running Reports",
     link: "https://www.papermark.io/view/cm5j4zh0r0003d43ncv8e7u66",
     info: "documenting my pain",
     private: true
   },
   {
     id: "woo",
-    title: "Woo History",
+    title: "📜 Woo History",
     link: "https://www.papermark.io/view/cm5ysldz6000f8hbqs5x9xp2p",
     info: "my family history in Quebec (in-progress)",
     private: true
@@ -189,23 +182,22 @@ function App() {
             {
               links.map(link => {
                 return (<div className="pb-3">
-                  {link.private && "🔒"}
                   {link.link !== "" ? <a href={link.link} className="underline" target="_blank">
-                  {link.title}</a> : link.title}: {link.info}
+                    {link.title}</a> : link.title}: {link.info}{link.private && " 🔒"}
                 </div>)
               })
             }
           </div>
         </div>
-      </div>
-      <div className="flex justify-between mt-8">
-        <div className="flex">
-          <img className="rounded-b-3xl opacity-80 mr-5" src={cw1} alt="cw1" width={'100px'} height={'auto'} />
-          {/* <img className="rounded-b-3xl opacity-70" src={cw3} alt="cw3" width={'120px'} height={'auto'} /> */}
-        </div>
-        <div>
-          {/* <img className="rounded-b-3xl opacity-70" src={cw3} alt="cw3" width={'110px'} height={'auto'} /> */}
-          <img className="rounded-b-3xl opacity-80" src={cw2} alt="cw2" width={'120px'} height={'auto'} />
+        <div className="flex justify-between mt-8">
+          <div className="flex">
+            <img className="rounded-b-3xl opacity-80 mr-5" src={cw1} alt="cw1" width={'100px'} height={'auto'} />
+            {/* <img className="rounded-b-3xl opacity-70" src={cw3} alt="cw3" width={'120px'} height={'auto'} /> */}
+          </div>
+          <div>
+            {/* <img className="rounded-b-3xl opacity-70" src={cw3} alt="cw3" width={'110px'} height={'auto'} /> */}
+            <img className="rounded-b-3xl opacity-80" src={cw2} alt="cw2" width={'120px'} height={'auto'} />
+          </div>
         </div>
       </div>
     </div>
