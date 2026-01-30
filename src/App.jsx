@@ -106,8 +106,8 @@ function App() {
         </div>
         <div className="mt-5 text-neutral-800 leading-6">
           <p>
-            I'm a software developer at <a href="https://drw.com/" className="underline" target="_blank">DRW</a> trading firm based in Montreal, Canada.
-            I graduated from <a href="https://www.concordia.ca/" className="underline" target="_blank">Concordia</a> with a Bachelor of Engineering in Software Engineering and completed my quest to get the iron ring.
+            I'm a software developer at <a href="https://drw.com/" className="underline decoration-2 underline-offset-4 transition-all duration-200 hover:text-cyan-700" target="_blank">DRW</a> trading firm based in Montreal, Canada.
+            I graduated from <a href="https://www.concordia.ca/" className="underline decoration-2 underline-offset-4 transition-all duration-200 hover:text-cyan-700" target="_blank">Concordia</a> with a Bachelor of Engineering in Software Engineering and completed my quest to get the iron ring.
             I also played a key role in organizing ConUHacks IV and V, Montreal's largest hackathon.
           </p>
         </div>
@@ -150,7 +150,7 @@ function App() {
             {
               jobs.map(job => {
                 return (<div className="pb-3">
-                  <a href={job.link} className="underline" target="_blank">{job.title}</a>: {job.info}
+                  <a href={job.link} className="underline decoration-2 underline-offset-4 transition-all duration-200 hover:text-cyan-700 font-medium" target="_blank">{job.title}</a>: {job.info}
                 </div>)
               })
             }
@@ -166,7 +166,7 @@ function App() {
               {
                 projects.map(project => {
                   return (<div className="pb-3">
-                    <a href={project.link} className="underline" target="_blank">{project.title}</a>: {project.info}
+                    <a href={project.link} className="underline decoration-2 underline-offset-4 transition-all duration-200 hover:text-cyan-700 font-medium" target="_blank">{project.title}</a>: {project.info}
                   </div>)
                 })
               }
@@ -182,7 +182,7 @@ function App() {
             {
               links.map(link => {
                 return (<div className="pb-3">
-                  {link.link !== "" ? <a href={link.link} className="underline" target="_blank">
+                  {link.link !== "" ? <a href={link.link} className="underline decoration-2 underline-offset-4 transition-all duration-200 hover:text-cyan-700 font-medium" target="_blank">
                     {link.title}</a> : link.title}: {link.info}{link.private && " 🔒"}
                 </div>)
               })
