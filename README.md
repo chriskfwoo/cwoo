@@ -11,3 +11,4 @@ cwoo.ca
 - **[Things](https://culturedcode.com/things/)** — favourite todo app
 - **[Bear](https://bear.app/)** — favourite note app
 - **[Notion](https://www.notion.com/)** — managing projects
+- **[Alcove](https://tryalcove.com/)** — dynamic Island for your Mac
